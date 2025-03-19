@@ -131,6 +131,10 @@ ifeq ($(USE_DEXOPT),true)
 include vendor/corvus/config/dexopt.mk
 endif
 
+ifeq ($(WITH_OPAPPS), true)
+include vendor/opstuff/config.mk
+endif
+
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/corvus/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/corvus/overlay/common
