@@ -56,9 +56,15 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.show_opt_in=false
 
 # Blur properties
+ifeq ($(USE_BLUR),true)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.blurs_are_expensive=1 \
-    ro.surface_flinger.supports_background_blur=1    
+    ro.surface_flinger.supports_background_blur=1
+else
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=0 \
+    ro.surface_flinger.supports_background_blur=0
+endif
 
 # Gapps
 ifeq ($(USE_GAPPS),true)
