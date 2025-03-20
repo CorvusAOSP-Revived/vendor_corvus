@@ -52,11 +52,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
-ifneq (,$(filter $(RAVEN_LAIR), Official Beta-Official))
+# Corvus Stuff
 PRODUCT_PACKAGES += \
     RavenDesk \
     CorvusZen
-endif
 
 # OmniStyle
 PRODUCT_PACKAGES += \
