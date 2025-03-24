@@ -1,7 +1,7 @@
 # Set all versions
 RAVEN_LAIR := LTS
-CORVUS_VERSION_BASE := 18.0
-CORVUS_CODENAME := Delta
+CORVUS_VERSION_BASE := 18.1
+CORVUS_CODENAME := Pipa
 
 # Set all versions
 BUILD_DATE := $(shell date -u +%d%m%Y)
